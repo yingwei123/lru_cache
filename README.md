@@ -10,7 +10,7 @@ The `lru_cache` package provides an in-memory Least Recently Used (LRU) Cache im
 To install the package, use:
 
 ```bash
-go get https://github.com/yingwei123/lru_cache
+go get github.com/yingwei123/lru_cache
 ```
 
 ---
