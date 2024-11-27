@@ -29,13 +29,13 @@ import (
 func main() {
 	cache := lru_cache.CreateLRUCache(3) // Capacity of 3
 
-	// Add some items to the cache
+	// Add some items to the cache, note here the second parameter of Put can be any type
 	cache.Put("key1", "value1")
 	cache.Put("key2", "value2")
 
 	// Access a value
 	value := cache.Get("key1")
-	fmt.Println(value) // Output: value1
+	fmt.Println(value.(string)) // Output: value1, to access the value, cast it to the type of the value
 }
 ```
 
